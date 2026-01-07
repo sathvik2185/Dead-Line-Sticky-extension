@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Deadline Sticky",
+  "version": "1.0",
+  "description": "Shows a sticky deadline reminder for students",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
